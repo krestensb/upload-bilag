@@ -1,0 +1,12 @@
+[19-Jan-2020 20:45:17 UTC] PHP Warning:  shell_exec() has been disabled for security reasons in /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Pdf.php on line 35
+[19-Jan-2020 20:45:17 UTC] PHP Warning:  shell_exec() has been disabled for security reasons in /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Pdf.php on line 35
+[19-Jan-2020 20:45:17 UTC] PHP Warning:  exec() has been disabled for security reasons in /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Base.php on line 79
+[19-Jan-2020 20:45:17 UTC] PHP Fatal error:  Uncaught Exception: You're asking to go to page 1 but max page of this document is 0 in /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Html.php:63
+Stack trace:
+#0 /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Html.php(57): Gufy\PdfToHtml\Html->goToPage(1)
+#1 /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Html.php(16): Gufy\PdfToHtml\Html->getContents('$image_tmp')
+#2 /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Pdf.php(56): Gufy\PdfToHtml\Html->__construct('$image_tmp')
+#3 /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Pdf.php(61): Gufy\PdfToHtml\Pdf->getDom()
+#4 /home/lstbeboer/public_html/api/create.php(49): Gufy\PdfToHtml\Pdf->html()
+#5 {main}
+  thrown in /home/lstbeboer/public_html/api/pdf/vendor/gufy/pdftohtml-php/src/Html.php on line 63
